@@ -1,0 +1,112 @@
+#newStageForm label {
+    margin-top: 0;
+}
+
+#newStageForm [type="text"] {
+    width: 60%;
+}
+
+.applicantStages td {
+    padding: 4px 8px;
+}
+
+.applicantStages tr {
+    cursor: pointer;
+}
+
+.applicantStages input[type="submit"] {
+    margin-top: 0;
+}
+
+#stageTable p i {
+    margin-left: 10px;
+}
+
+.stagesTableForm {
+    display: none;
+}
+
+.stagesTableForm label {
+    margin-top: 0;
+}
+
+#editResponse {
+    margin-bottom: 10px;
+}
+
+#createNewResponse {
+    margin-top: 10px;
+}
+
+.list-group-item {
+    position: unset;
+    display: table-row;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.disabled {
+    pointer-events: none;
+    color: #dbdbdb;
+    cursor: text;
+}
+
+.optionDelete,
+.optionEdit {
+    float: right;
+    margin-left: 3%;
+    font-family: Courier, sans-serif;
+}
+
+.optionsContainer {
+    display: block;
+}
+
+.optionTitle {
+    padding-top: 1%;
+}
+
+.stagesTableForm .stageEditTitle,
+.optionsContainer .optionEditTitle,
+.optionsContainer .optionAddTitle {
+    width: 80%;
+    margin-right: 10px;
+}
+
+.optionsContainer .optionAddTitle.firstOption {
+    margin-bottom: 10px;
+}
+
+.modalContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContainer .container {
+    width: 50%;
+    height: fit-content;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    background-color: #FFFFFF;
+}
+
+.modalContainer .container p {
+    font-weight: 700;
+    padding: 2em;
+    padding-bottom: 5em;
+}
+
+.modalContainer .container a {
+    position: relative;
+    bottom: 1em;
+    text-align: right;
+    padding: 1em;
+}
+
+.modalContainer .container a:hover {
+    cursor: pointer;
+}

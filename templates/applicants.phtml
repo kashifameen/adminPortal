@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php
+    require 'partials/layout/head.phtml';
+    echo \Portal\ViewHelpers\LayoutViewHelper::outputTitle('Applicants');
+    ?>
+    <link rel="stylesheet" type="text/css" href="./css/applicants.css">
+    <script src="./js/populateDropdowns.js" defer></script>
+    <script defer src="./js/applicantModal.js"></script>
+    <script defer src="./js/deleteApplicant.js"></script>
+    <script defer src="./js/displayApplicants.js"></script>
+    <script defer src="./js/nextStageModal.js"></script>
+</head>
+<body> 
+<?php require 'partials/layout/header.phtml'; ?>
+
+<?php require 'partials/layout/nav.phtml'; ?>
+
+    <div class="row">
+        <div class="col-xs-12 registeredApplicants">
+            <h1>Applicants</h1>
+            <form class="arrowForm" id="sortFilterApplicants" method="get">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#paying" aria-controls="paying" role="tab" data-toggle="tab">Paying Applicants</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#apprentice" aria-controls="apprentice" role="tab" data-toggle="tab">
+                            Apprentice Applicants
+                        </a>
+                    </li>
+                      <li class="pull-right">
+                        <label for="stages">
+                            Select Stages
+                            <select id="stages" class="submitApplicant form-control" name="stageId">
+                                <option value="all">All</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li class="pull-right">
+                        <label for="cohorts">
+                            Select Cohort
+                            <select id="cohorts" class="submitApplicant form-control" name="cohortId">
+                                <option value="all">All</option>
+                            </select>
+                        </label>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <?php echo \Portal\ViewHelpers\DisplayApplicantViewHelper::displayTab($data, 'paying', $sort); ?>
+                    <?php echo \Portal\ViewHelpers\DisplayApplicantViewHelper::displayTab($data, 'apprentice', $sort); ?>
+                </div>
+
+            </form>
+            <?php echo \Portal\ViewHelpers\PaginationViewHelper::pagination($page, $count);?>
+        </div>
+
+        <!-- Modal -->
+        <?php require('partials/applicantInfoModal.phtml'); ?>
+        <?php require('partials/nextStageModal.phtml'); ?>
+    </div>
+
+<?php require 'partials/layout/footer.phtml'; ?>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+.modal-title span {
+    font-size: 12px;
+}
+
+.modal-title #apprentice {
+    position: relative;
+    top: -5px;
+}
+
+.modal-title #dateTimeAdded {
+    padding-top: 4px;
+    padding-right: 20px;
+}
+
+.stageDropdown {
+    font-weight: bold;
+}
+
+#sortFilterApplicants li label {
+    margin-top: -18px;
+}
+
+#sortFilterApplicants li select {
+    margin-top: 2px;
+}
+
+.sort {
+    white-space: nowrap;
+}
+
+.sort div {
+    display: inline;
+    padding-left: 10px;
+}
+
+.sort .arrowBtn {
+    border: none;
+}
+
+.sort .arrowBtn.active {
+    color: #d64405;
+}
+
+p.detail {
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+p.detail span {
+    font-weight: normal;
+}
+
+.errorMsg {
+    color: #761c19;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.collapse-header {
+    overflow: auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.collapse-header:hover {
+    background: #dddddd;
+}
+
+.applicationFormSection .collapse.in {
+    border-top: 1px solid black;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+#applicantModal section {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+#applicantModal section:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+.collapse-header h4 {
+    float: left;
+    padding-left: 15px;
+}
+
+.collapse-header i {
+    float: right;
+    margin: 12px;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+#submitApplicant {
+    margin: 0;
+}
+
+.formItem_alert {
+    margin-top: 15px;
+}
+
+.clipboard {
+    margin-left: 10px;
+}
